@@ -25,10 +25,10 @@ const Header = async () => {
         >
           <Button
           variant="outline"
-          className="border-2 hover:border-blue-300 hover:bg-blue-50/50 transition-all duration-200"
+          className="border-2 text-white hover:border-blue-300 hover:bg-blue-50/50 transition-all duration-200"
           >
           <LayoutDashboard size={18} />
-          <span className="hidden md:inline">Dashboard</span>
+          <span className="hidden md:inline ">Dashboard</span>
           </Button>
         </Link>
         <a href="/transaction/create">
