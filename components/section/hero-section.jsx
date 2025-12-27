@@ -20,7 +20,7 @@ const Hero = () => {
     const description = "Stop patching together Notion, Slack, and Excel. Avento creates a single source of truth for your projects, clients, and cash flow";
 
     return (
-        <section className="relative w-full flex items-center justify-center pt-16 lg:pt-32 pb-4 overflow-hidden">
+        <section className="relative w-full flex items-center justify-center pt-44 lg:pt-44 pb-4 overflow-hidden ">
             <div className="relative z-10 w-full mx-auto max-w-7xl px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex flex-col items-center text-center">
                     <motion.div

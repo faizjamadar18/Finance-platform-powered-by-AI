@@ -133,6 +133,20 @@ const TransactionTable = ({ transactions }) => {
         return result;
     }, [transactions, searchTerm, typeFilter, sortConfig]);
 
+    // Pagination
+    const ROWS_PER_PAGE = 10;
+    const [currentPage, setCurrentPage] = useState(1);
+    const totalPages = Math.max(1, Math.ceil(filterAndSortedTransactions.length / ROWS_PER_PAGE));
+
+    useEffect(() => {
+        if (currentPage > totalPages) setCurrentPage(1);
+    }, [filterAndSortedTransactions.length, totalPages]);
+
+    const paginatedTransactions = useMemo(() => {
+        const start = (currentPage - 1) * ROWS_PER_PAGE;
+        return filterAndSortedTransactions.slice(start, start + ROWS_PER_PAGE);
+    }, [filterAndSortedTransactions, currentPage]);
+
 
     const handleSort = (field) => {
         setsortConfig((current) => ({   // current is the current sortConfig object 
@@ -151,9 +165,10 @@ const TransactionTable = ({ transactions }) => {
 
     const handleSelectAll = () => {
         setselectedIds((current) =>
-            current.length === filterAndSortedTransactions.length
-                ? []
-                : filterAndSortedTransactions.map((t) => t.id)
+            // if all visible rows are selected, remove them; otherwise add visible ids
+            paginatedTransactions.every((t) => current.includes(t.id))
+                ? current.filter((id) => !paginatedTransactions.some((t) => t.id === id))
+                : Array.from(new Set([...current, ...paginatedTransactions.map((t) => t.id)]))
         );
     };
 
@@ -280,7 +295,7 @@ const TransactionTable = ({ transactions }) => {
                                 </TableCell>
                             </TableRow>
                         ) : (
-                            filterAndSortedTransactions.map((transaction) => (
+                            paginatedTransactions.map((transaction) => (
                                 <TableRow key={transaction.id}>
                                     <TableCell>
                                         <Checkbox
@@ -326,6 +341,28 @@ const TransactionTable = ({ transactions }) => {
                         )}
                     </TableBody>
                 </Table>
+                {/* Pagination controls */}
+                <div className="flex items-center justify-between p-2">
+                    <div className="text-sm text-muted-foreground">Page {currentPage} of {totalPages}</div>
+                    <div className="flex items-center gap-2">
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                            disabled={currentPage === 1}
+                        >
+                            <ChevronLeft className="h-4 w-4" />
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                            disabled={currentPage === totalPages}
+                        >
+                            <ChevronRight className="h-4 w-4" />
+                        </Button>
+                    </div>
+                </div>
             </div>
         </div>
     )

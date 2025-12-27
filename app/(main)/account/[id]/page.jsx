@@ -25,10 +25,10 @@ const AccountPage = async ({ params }) => {
     const { transactions, ...account } = accountData
 
     return (
-        <div className="space-y-8 px-5 md:px-20">
+        <div className="space-y-8 px-5 md:px-40">
             <div className="flex gap-4 items-end justify-between">
                 <div>
-                    <h1 className="text-5xl sm:text-6xl font-bold tracking-tight capitalize">
+                    <h1 className="text-4xl sm:text-5xl font-bold tracking-tight capitalize">
                         {account.name}
                     </h1>
                     <p className="text-muted-foreground">
@@ -49,14 +49,14 @@ const AccountPage = async ({ params }) => {
 
 
             {/* Transaction Chart:  */}
-            <Suspense fallback={<BarLoader className='mt-4' width={"100%"} color='#9333ea'></BarLoader>}>
+            <Suspense fallback={<BarLoader className='mt-4' width={"100%"} color='#0055ff'></BarLoader>}>
                 <TransactionChart transactions={transactions}></TransactionChart>
             </Suspense>
 
 
             
             {/* Transactions Table:  */}
-            <Suspense fallback={<BarLoader className='mt-4' width={"100%"} color='#9333ea'></BarLoader>}>
+            <Suspense fallback={<BarLoader className='mt-4' width={"100%"} color='#0055ff'></BarLoader>}>
                 <TransactionTable transactions={transactions}></TransactionTable>
             </Suspense>
 

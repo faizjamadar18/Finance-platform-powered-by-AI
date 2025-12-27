@@ -136,6 +136,8 @@
   }
 }
 
+
+
 /* Hero Image 3D Effect */
 .hero-image-wrapper {
   perspective: 1000px;       
@@ -290,4 +292,102 @@ html {
 
 .delay-1000 {
   animation-delay: 1000ms;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+.button__flair {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
+  transform-origin: 0 0;
+  will-change: transform;
+  background: hsl(var(--foreground));
+  mix-blend-mode: difference;
+  border-radius: 100px;
+}
+
+.button__label {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  transition: color 50ms ease-in-out;
+}
+
+
+.title {
+  @apply text-3xl md:text-4xl font-medium bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text text-balance text-center leading-tight;
+}
+
+.desc {
+  @apply text-base md:text-lg text-muted-foreground text-balance text-center max-w-lg mx-auto;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-border {
+  position: relative;
+}
+
+.rotating-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(from 0deg,
+      transparent 0%,
+      hsl(var(--primary)) 50%,
+      transparent 100%);
+  border-radius: inherit;
+  animation: rotate-border 3s linear infinite;
+  z-index: -1;
+}
+
+.rotating-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: hsl(var(--background) / 0.05);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.badge-glow {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 0 20px rgba(0, 85, 255, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.badge-minimal {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }

@@ -14,6 +14,11 @@ import React from "react";
 import Background from "@/components/global/background";
 import Hero from "@/components/section/hero-section";
 import Difference from "@/components/section/difference";
+import Workflow from "@/components/section/workflow-section";
+import Capibilities from "@/components/section/capability";
+import Cta from "@/components/section/cta";
+import Footer from "@/components/section/footer";
+
 
 const LandingPage = () => {
   return (
@@ -21,6 +26,10 @@ const LandingPage = () => {
       <Background/>
       <Hero/>
       <Difference/>
+      <Workflow/>
+      <Capibilities/>
+      <Cta/>
+      <Footer/>
     </div>
   );
 };
