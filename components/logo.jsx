@@ -29,7 +29,7 @@ const Logo = ({ className = "", showIcon = true, size = "default" }) => {
         </div>
       )}
       <span
-        className={`font-extrabold bg-black bg-clip-text text-transparent ${sizeClasses[size]} tracking-tight`}
+        className={`font-extrabold bg-white bg-clip-text text-transparent ${sizeClasses[size]} tracking-tight`}
       >
         Finance
       </span>

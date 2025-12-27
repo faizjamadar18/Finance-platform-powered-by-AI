@@ -211,7 +211,7 @@ export function AddTransactionForm({ accounts }) {
         >
           Cancel
         </Button>
-        <Button type="submit" className="w-1/2" disabled={transactionLoading}>
+        <Button type="submit" variant={"secondary"} className="w-1/2 " disabled={transactionLoading}>
           {transactionLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />

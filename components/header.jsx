@@ -10,36 +10,11 @@ import Logo from "./logo";
 const Header = async () => {
   await checkUser();
   return (
-    <header className="fixed top-0 w-full bg-white/90 backdrop-blur-lg z-50 border-b border-gray-200/50 shadow-sm">
+    <header className="fixed top-0 w-full backdrop-blur-lg z-50 border-b shadow-sm">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Logo size="default" />
 
-        {/* Navigation Links - Different for signed in/out users */}
-        <div className="hidden md:flex items-center space-x-10 mr-20">
-          <SignedOut>
-            <a 
-              href="#features" 
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
-            >
-              Features
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-            <a 
-              href="#steps" 
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
-            >
-              How It Works?
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-            <a
-              href="#testimonials"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
-            >
-              Testimonials
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-          </SignedOut>
-        </div>
+
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-3">
