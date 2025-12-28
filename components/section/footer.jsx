@@ -28,10 +28,10 @@ const Footer = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
                     <div className="lg:col-span-4">
                         <Link href="/" className="inline-block">
-                            <Icons.wordmark className="h-5 w-auto text-foreground" />
+                             <img src="/logo.png" className="md:h-10 h-8 w-auto" alt="logo" />
                         </Link>
                         <p className="text-sm text-muted-foreground mt-4 max-w-xs">
-                            Simple workspace for teams
+                            Simple workspace for Everyone
                         </p>
                     </div>
 
@@ -96,7 +96,7 @@ const Footer = () => {
 
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-12 pt-8 border-t border-foreground/5">
                     <p className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} Avento. All rights reserved.
+                        © {new Date().getFullYear()} Xpnese. All rights reserved.
                     </p>
 
                     <div className="flex items-center gap-4">

@@ -84,7 +84,7 @@ const Difference = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
-                                Avento
+                                Xpense
                             </motion.h3>
 
                             <div className="space-y-3 relative">

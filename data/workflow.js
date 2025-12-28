@@ -12,6 +12,6 @@ export const WORKFLOW_STEPS = [
     {
         number: "3",
         title: "Understand Your Money",
-        description: "Track progress, share updates, and deliver work on time",
+        description: "Check your dashboard to see where your money goes",
     },
 ];

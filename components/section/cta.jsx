@@ -66,7 +66,7 @@ const Cta = () => {
                                     }}
                                     className="absolute inset-0 bg-primary/40 rounded-2xl blur-2xl"
                                 />
-                                <Icons.wordmarkGradient className="h-6 text-foreground/90" />
+                                 <img src="/logo.png" className="md:h-10 h-8 w-auto" alt="logo" />
                             </motion.div>
 
                             <motion.h2
@@ -78,7 +78,7 @@ const Cta = () => {
                             >
                                 The better way to
                                 <br />
-                                manage your work
+                                manage your Accounts
                             </motion.h2>
 
                             <motion.p
@@ -88,7 +88,7 @@ const Cta = () => {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="text-base md:text-lg text-muted-foreground mt-6 max-w-2xl"
                             >
-                                Join other freelancers and agencies <br /> organizing their business today
+                                See where your money actually goes, set budgets that make sense<br />  and finally feel incontrolled expense.
                             </motion.p>
 
                             <motion.div
@@ -101,7 +101,7 @@ const Cta = () => {
                             >
                                 <Link href={Routes.Dashboard}>
                                     <Button size="lg" className="text-base">
-                                        Start for free
+                                        Start Tracking today
                                     </Button>
                                 </Link>
                             </motion.div>

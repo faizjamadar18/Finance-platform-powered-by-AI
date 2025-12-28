@@ -2,28 +2,28 @@ export const capabilities = [
     {
         id: 1,
         title: "Client Hub",
-        description: "Store client info, notes, files, and ongoing work in one clean view.",
+        description: "Store client info and  transactions in one clean view.",
         illustration: "/images/client.png",
         icon: "users"
     },
     {
         id: 2,
-        title: "Project Board",
-        description: "Track tasks and deadlines with a simple board and timeline view.",
+        title: "Email Alerts",
+        description: "Emails users monthly summaries of their total income and expenses",
         illustration: "/images/project.png",
         icon: "calendar"
     },
     {
         id: 3,
-        title: "Team View",
-        description: "See who's doing what and balance workload across your team.",
+        title: "Transaction Board",
+        description: "Track transactions with a simple UI and timeline view.",
         illustration: "/images/team.png",
         icon: "zap"
     },
     {
         id: 4,
-        title: "Invoices",
-        description: "Create and send simple invoices and track what's paid.",
+        title: "Snap & Track Receipts",
+        description: "Take a photo of any receipt and we'll extract the details automatically",
         illustration: "/images/invoices.png",
         icon: "file"
     }
@@ -65,8 +65,8 @@ export const AVATAR_ITEMS = [
 export const stats = [
     {
         id: 1,
-        value: "3k+",
-        label: "freelancers",
+        value: "10k+",
+        label: "users",
         avatars: [
             "/images/avatars/avatar1.jpg",
             "/images/avatars/avatar2.jpg",
@@ -77,11 +77,11 @@ export const stats = [
     },
     {
         id: 2,
-        value: "1.2M+",
+        value: "100k+",
         label: "Sends",
-        description: "Create and send simple invoices and track what's paid.",
+        description: "already uploaded Receipt and tracked their expense",
         button: {
-            text: "Create invoice",
+            text: "Create your one",
             href: "#"
         }
     }

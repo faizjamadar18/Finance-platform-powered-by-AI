@@ -36,7 +36,7 @@ const Capibilities = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: 0.3 }}
                     >
-                        Clients, projects, tasks, and invoices in one clean interface
+                        You don't need another complicated finance app
                     </motion.p>
                 </div>
 
@@ -207,7 +207,7 @@ const Capibilities = () => {
                                     {stats[0]?.value} {stats[0]?.label}
                                 </h3>
                                 <p className="text-sm text-muted-foreground mt-1">
-                                    already using Avento
+                                    already using Xpense
                                 </p>
                             </div>
                         </motion.div>

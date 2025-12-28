@@ -25,9 +25,9 @@ export const NAV_LINKS = [
 
 export const footerLinks = {
     product: [
-        { label: "Features", href: "#capabilities" },
-        { label: "Integrations", href: "#integrations" },
-        { label: "Pricing", href: "#membership" },
+        { label: "Features", href: "#" },
+        { label: "Integrations", href: "#" },
+        { label: "Pricing", href: "#" },
         { label: "Changelog", href: "#" }
     ],
     resources: [
@@ -48,5 +48,5 @@ export const socialLinks = [
     { label: "X", href: "https://x.com", icon: "x" },
     { label: "GitHub", href: "https://github.com", icon: "github" },
     { label: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
-    { label: "Cursor", href: "https://cursor.com", icon: "cursor" }
+    // { label: "Cursor", href: "https://cursor.com", icon: "cursor" }
 ];
