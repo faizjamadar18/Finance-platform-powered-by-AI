@@ -16,8 +16,8 @@ import Container from "../global/container";
 
 const Hero = () => {
 
-    const badge = "Meet the Avento OS";
-    const description = "Stop patching together Notion, Slack, and Excel. Avento creates a single source of truth for your projects, clients, and cash flow";
+    const badge = "Meet your Expense here";
+    const description = "Tired of checking your bank account and wondering where everything went? Xpense helps you track every dollar";
 
     return (
         <section className="relative w-full flex items-center justify-center pt-44 lg:pt-44 pb-4 overflow-hidden ">
@@ -61,7 +61,7 @@ const Hero = () => {
                                 </motion.span>
                             ))}
                             <br />
-                            {"Performance Agencies".split(" ").map((word, index) => (
+                            {"Performance Tracker".split(" ").map((word, index) => (
                                 <motion.span
                                     initial={{ filter: "blur(10px)", opacity: 0, y: 10 }}
                                     animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ const Hero = () => {
                         </Link>
                         <Link href="/">
                             <Button size="lg" variant="outline">
-                                Get demo
+                                Sign in
                             </Button>
                         </Link>
                     </motion.div>

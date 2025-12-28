@@ -20,7 +20,7 @@ const Difference = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Where Avento stands out
+                        Where Xpense stands out
                     </motion.h2>
 
                     <motion.p
