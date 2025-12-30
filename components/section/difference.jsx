@@ -30,7 +30,7 @@ const Difference = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        Most tools cater to big teams or chaotic workflows
+                        Most tools Shatter 
                     </motion.p>
                 </div>
 

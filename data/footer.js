@@ -13,14 +13,7 @@ export const NAV_LINKS = [
         label: "Capabilities",
         href: Routes.Capabilities,
     },
-    {
-        label: "Integrations",
-        href: Routes.Integrations,
-    },
-    {
-        label: "Membership",
-        href: Routes.Membership,
-    },
+
 ] ;
 
 export const footerLinks = {

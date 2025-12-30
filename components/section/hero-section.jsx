@@ -20,7 +20,7 @@ const Hero = () => {
     const description = "Tired of checking your bank account and wondering where everything went? Xpense helps you track every dollar";
 
     return (
-        <section className="relative w-full flex items-center justify-center pt-44 lg:pt-44 pb-4 overflow-hidden ">
+        <section className="relative w-full flex items-center justify-center pt-34 lg:pt-44 pb-4 overflow-hidden ">
             <div className="relative z-10 w-full mx-auto max-w-7xl px-4 md:px-8 lg:px-12 xl:px-16">
                 <div className="flex flex-col items-center text-center">
                     <motion.div
@@ -47,9 +47,9 @@ const Hero = () => {
                         </div>
                     </motion.div>
 
-                    <h1 className="text-4xl md:text-6xl font-semibold tracking-tight font-heading mt-8">
+                    <h1 className="text-4xl md:text-7xl font-semibold tracking-tight font-heading mt-8">
                         <Balancer>
-                            {"The OS for High".split(" ").map((word, index) => (
+                            {"Smarter Finance.".split(" ").map((word, index) => (
                                 <motion.span
                                     initial={{ filter: "blur(10px)", opacity: 0, y: 10 }}
                                     animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
@@ -61,14 +61,14 @@ const Hero = () => {
                                 </motion.span>
                             ))}
                             <br />
-                            {"Performance Tracker".split(" ").map((word, index) => (
+                            {"Powered by AI.".split(" ").map((word, index) => (
                                 <motion.span
                                     initial={{ filter: "blur(10px)", opacity: 0, y: 10 }}
                                     animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
                                     transition={{ duration: 0.4, delay: (4 + index) * 0.05 }}
                                     className={cn(
                                         "inline-block",
-                                        word === "Performance" && "bg-linear-to-r from-primary via-blue-500 to-primary bg-size-[200%_100%] animate-[shimmer_3s_ease-in-out_infinite] text-transparent bg-clip-text"
+                                        word === "Powered" && "bg-linear-to-r from-primary via-blue-500 to-primary bg-size-[200%_100%] animate-[shimmer_3s_ease-in-out_infinite] text-transparent bg-clip-text"
                                     )}
                                     key={index}
                                 >
@@ -100,12 +100,12 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.6 }}
                         className={cn("flex items-center gap-4 flex-wrap justify-center mt-8")}
                     >
-                        <Link href="/">
+                        <Link href="/sign-up">
                             <Button size="lg">
                                 Start for free
                             </Button>
                         </Link>
-                        <Link href="/">
+                        <Link href="/sign-in">
                             <Button size="lg" variant="outline">
                                 Sign in
                             </Button>
