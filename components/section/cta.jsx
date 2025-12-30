@@ -14,7 +14,7 @@ const Cta = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.6 }}
                         className="relative rounded-3xl overflow-visible z-0"
                     >
@@ -49,7 +49,7 @@ const Cta = () => {
                             <motion.div
                                 initial={{ scale: 0.9, opacity: 0 }}
                                 whileInView={{ scale: 1, opacity: 1 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
                                 whileHover={{ scale: 1.05, rotate: [0, -5, 5, 0] }}
                                 className="relative mt-0 cursor-pointer"
@@ -72,7 +72,7 @@ const Cta = () => {
                             <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.6, delay: 0.3 }}
                                 className="text-3xl md:text-4xl lg:text-5xl font-medium bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text leading-[1.2] mt-8 max-w-3xl"
                             >
@@ -84,7 +84,7 @@ const Cta = () => {
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="text-base md:text-lg text-muted-foreground mt-6 max-w-2xl"
                             >
@@ -94,7 +94,7 @@ const Cta = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.6, delay: 0.5 }}
                                 whileHover={{ scale: 1.05 }}
                                 className="mt-6"

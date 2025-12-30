@@ -17,7 +17,7 @@ const Difference = () => {
                         className="title mt-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         Where Xpense stands out
@@ -27,7 +27,7 @@ const Difference = () => {
                         className="desc mt-4"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
                         Most tools Shatter 
@@ -39,7 +39,7 @@ const Difference = () => {
                         className="grid lg:grid-cols-2 gap-16 lg:gap-28 relative"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     >
                         <div className="flex flex-col gap-y-6">
@@ -47,7 +47,7 @@ const Difference = () => {
                                 className="text-2xl font-medium text-foreground/60 text-center"
                                 initial={{ opacity: 0, y: -20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
                                 Other tools
@@ -59,7 +59,7 @@ const Difference = () => {
                                         key={index}
                                         initial={{ opacity: 0, y: 15 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: false }}
                                         transition={{
                                             duration: 0.5,
                                             delay: 0.2 + index * 0.1,
@@ -81,7 +81,7 @@ const Difference = () => {
                                 className="text-2xl font-medium text-primary text-center"
                                 initial={{ opacity: 0, y: -20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
                                 Xpense
@@ -93,7 +93,7 @@ const Difference = () => {
                                         key={index}
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: false }}
                                         transition={{
                                             duration: 0.5,
                                             delay: 0.2 + index * 0.1,
@@ -117,7 +117,7 @@ const Difference = () => {
                             className="relative z-10 size-14 rounded-full bg-background border-2 border-primary/40 flex items-center justify-center shadow-[0_0_30px_rgba(0,85,255,0.4)]"
                             initial={{ scale: 0, rotate: -180 }}
                             whileInView={{ scale: 1, rotate: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false }}
                             transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
                         >
                             <Icons.icon className="size-5 text-foreground/80 mb-0.5 mr-0.5" />

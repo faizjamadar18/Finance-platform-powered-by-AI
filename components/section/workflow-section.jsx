@@ -21,7 +21,7 @@ const Workflow = () => {
                         className="title mt-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         Chaos to clarity
@@ -33,7 +33,7 @@ const Workflow = () => {
                         className="desc mt-4"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
                         with Xpense OS
@@ -46,7 +46,7 @@ const Workflow = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{
                                     duration: 0.6,
                                     delay: 0.4 + index * 0.2,
@@ -76,7 +76,7 @@ const Workflow = () => {
                                         className="flex md:hidden relative my-2 -bottom-8 rotate-90"
                                         initial={{ opacity: 0, y: -10 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: false }}
                                         transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
                                     >
                                         <Image
@@ -98,7 +98,7 @@ const Workflow = () => {
                                     }}
                                     initial={{ opacity: 0, x: -10 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: false }}
                                     transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
                                 >
                                     <Image

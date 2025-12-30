@@ -23,7 +23,7 @@ const Capibilities = () => {
                         className="title mt-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.2 }}
                     >
                         Built for how you work
@@ -33,7 +33,7 @@ const Capibilities = () => {
                         className="desc mt-4"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.3 }}
                     >
                         You don't need another complicated finance app
@@ -50,7 +50,7 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.4 }}
                     >
 
@@ -86,7 +86,7 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.5 }}
                     >
 
@@ -122,7 +122,7 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.6 }}
                     >
 
@@ -158,7 +158,7 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.7 }}
                     >
 
@@ -189,7 +189,7 @@ const Capibilities = () => {
                         className="lg:col-span-4 flex flex-col gap-4"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.3, delay: 0.8 }}
                     >
                         <motion.div
