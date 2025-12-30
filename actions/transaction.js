@@ -71,7 +71,7 @@ export async function createTransaction(data) {
 // Scan Receipt
 export async function scanReceipt(file) {
     try {
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
         // Convert File to ArrayBuffer
         const arrayBuffer = await file.arrayBuffer();    // Ai modals just receives string hence it has to be converted into Base64 String to converting nto Base64 it first need to be converted into arrayBuffer 
