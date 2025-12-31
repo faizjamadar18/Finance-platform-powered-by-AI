@@ -180,7 +180,7 @@ const TransactionTable = ({ transactions }) => {
         <div className="space-y-4">
 
             {deleteLoading && (
-                <BarLoader className="mt-4" width={"100%"} color="#9333ea" />
+                <BarLoader className="mt-4" width={"100%"} color="#0055ff" />
             )}
             {/* Filters */}
             <div className="flex flex-col sm:flex-row gap-4">
