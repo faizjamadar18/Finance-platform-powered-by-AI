@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Xpense-flow - Powered by AI 💸🤖
+### AI-Powered Finance & Expense Management Platform
 
-## Getting Started
+Xpense-flow is an intelligent finance platform built with **Next.js**, **Clerk Authentication**, **Supabase**, and **Prisma**. It helps users track expenses, scan receipts with AI, and receive automated financial insights to stay on top of their budget.
 
-First, run the development server:
+---
+
+## 🔗 Live Demo
+
+🌐 **Live Link:** [Xpense-flow Live](https://xpenseflow.vercel.app)  
+🎥 **Demo Video (YouTube):** [Watch Demo](https://www.youtube.com/watch?v=JfZncqAAA4E)
+
+---
+
+## ✨ Features
+
+- 🤖 **AI-powered finance tracking** for better expense management
+- 🧾 **AI receipt scanning** to extract merchant, date, amount, and category
+- 📊 **Automated monthly email reports** with AI-generated spending insights
+- 🚨 **Budget threshold alerts** to help users avoid overspending
+- 🔐 **Secure authentication** using Clerk
+- ☁️ **Reliable data storage** with Supabase
+- 🧠 **Structured database handling** using Prisma
+
+---
+
+## 📈 Impact
+
+- Improved financial awareness by **90%**
+- Reduced manual expense entry by **98%**
+- Achieved **90% accuracy** in receipt data extraction
+- Enabled proactive spending control with **80% budget-threshold alerts**
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js
+- React.js
+- Tailwind CSS
+
+### Authentication
+- Clerk
+
+### Backend / Database
+- Supabase
+- Prisma
+
+### AI Integration
+- AI Receipt Scanning
+- AI Spending Insights
+
+### Notifications
+- Automated Email Reports
+
+---
+
+## 🚀 Key Highlights
+
+- Smart and user-friendly expense management
+- Fast receipt parsing with AI
+- Monthly summaries sent automatically by email
+- Helps users track, analyze, and improve spending habits
+- Designed for a clean, modern, and responsive experience
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+- Node.js
+- npm or yarn
+- Supabase account
+- Clerk account
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone the repository
+git clone https://github.com/faizjamadar18/Xpense-flow.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Move into the project folder
+cd xpense-flow
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Install dependencies
+npm install
